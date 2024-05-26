@@ -107,6 +107,10 @@ def visualize_data(df):
         st.error("The CSV file does not contain any columns.")
 
 def main():
+    fixed_string = "Developer -> Satwik Tiwari\REC BIJNOR(IT)\n from Prayagraj."
+
+    # Display the fixed string at the end of the page
+    st.write(fixed_string)
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", ["Upload & Preprocess", "Visualization", "Model Training", "Predict"])
 
